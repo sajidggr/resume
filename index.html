@@ -3,428 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Interior Design Studio</title>
-    <link rel="stylesheet" href="day7.css">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    <title>Digital Agencey</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root{
-          --primary-text-color: #3a5a40;
-          
-        }
-        body{
-            background-color: #ecf6fc;
-            font-family: Arial, Helvetica, sans-serif;
-            
-        }
-        p{
-            font-family: "Roboto", sans-serif;
-            font-weight: 500;
-            
-        }
-        
-        .flex{
-            display: flex;
-            align-items: center;
-        }
-        .container{
-            max-width: 1180px;
-            margin-inline: auto;
-        
-        }
-        nav{color: white;
-            background-color: var(--primary-text-color);
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            box-shadow: 2px 2px 5px #81c28d;
-            z-index: 99;
-        }
-        .nav-links{
-            justify-content: space-between;
-            padding-block: 15px;
-            color: white;
-        
-        }
-        li{
-            transition: 0.2s;
-        }
-        li:hover{
-            transform: translateY(-2px);
-        
-        }
-        .logo{
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            object-fit: cover;
-            cursor: pointer;
-        
-        }
-        ul{
-            list-style: none;
-            align-items: center;
-            gap: 16px;
-        }
-        .text{
-            height: 25px;
-            border-radius: 4px;
-            border: none;
-            padding-inline: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .btn{
-            height: 25px;
-            background-color: royalblue;
-            width: 70px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            transition: 0.8s ease;
-        }
-        .btn:hover{
-            background-color: rgb(72, 116, 247);
-        }
-        .hover-links{
-            cursor: pointer;
-            transition: 0.8s ease;
-        
-        }
-        .hover-links:hover{
-            color: rgb(221, 221, 221);
-        }
-        .hero{
-            background-color: var(--primary-text-color);
-            padding-block: 100px;
-            color: white;
-         
-        }
-        .hero-sect{color: white;
-            justify-content: space-between;
-        }
-        .hero1{
-            width: 400px;
-           
-        }
-        
-        .head-heading{
-            font-size: 42px;
-            
-        }
-        .head-text{
-            margin-top: 10px;
-            padding-right: 15px;
-            line-height: 1.4rem;
-         
-        }
-        .btn-box{
-            margin-top: 20px;
-        }
-        
-        .btn1{
-            width: 100px;
-            border-radius: 12px;
-            border: none;
-            height: 30px;
-            background-color: yellow ;
-            font-weight: 700;
-            cursor: pointer;
-            transition: 0.7s ease;
-        }
-        
-        .btn1:hover{
-            background-color: rgba(255, 255, 61, 0.952); 
-        }
-        .btn2{
-            width: 100px;
-            border-radius: 12px;
-            border: none;
-            height: 30px;
-            background-color: var(--primary-text-color);
-            color: white;
-            border: 1px solid white;
-            margin-left: 8px ;
-            font-weight: 700;
-            cursor: pointer;
-        
-         
-        }
-        .head-text{
-            font-size: 15px;
-            color: #ddd;
-        }
-        .img-logo1{
-            margin-right: 100px;
-            padding-top: 30px;
-           
-        }
-        
-        .cta-section{
-         
-        }
-        .card{
-            width: 300px;
-        }
-        .cta{
-            justify-content: space-between;
-            margin-block: 50px;
-        }
-        .text-con{
-            width: 300px;
-            padding: 0 15px;
-        }
-        .chair-box{
-            align-items: center;
-        }
-        .chair{
-            margin-right: 70px;
-            width: 200px;
-            height: 250px;
-            padding-left: 40px;
-            box-shadow: 2px 2px 8px #ddd;
-            cursor: pointer;
-            border-radius: 12px;
-            transition: all 0.5s ease;
-        
-        
-        }
-        
-        .chair:hover{
-            transform: translateY(-2px);
-            box-shadow: 3px 3px 8px #ddd;
-            background-color: #fff;
-        
-        }
-        .chair1{
-            padding-top: 20px;
-           
-        
-        }
-        
-        .chair2{
-            padding-left: 20px;
-        
-        }
-        .chair3{
-            padding-top: 30px;
-        }
-        .stuff1, .stuff2 ,.stuff3{
-            font-weight: 600;
-            font-size: 17px;
-           
-        }
-        .stuff1{
-            padding-left: 20px;
-            padding-top: 15px;
-        }
-        .stuff2{
-            padding-left: 45px;
-            padding-top: 15px;
-        }
-        .stuff3{
-            padding-left: 20px;
-            padding-top: 32px;
-        }
-        .money1, .money2 , .money3{
-            font-weight: 600;
-            font-size: 14px;
-        }
-        .money1{
-        padding-left: 23px;
-        }
-        .money2{
-        padding-left: 48px;
-            }
-        .money3{
-        padding-left: 23px}
-        
-        .hh2{
-            margin-bottom: 15px;
-            padding-right: 10px;
-            font-size: 30px;
-        }
-        .pp2{
-        line-height: 1.5rem;
-        margin-bottom: 20px;
-        }
-        .btn3{
-            width: 100px;
-            border-radius: 12px;
-            border: none;
-            height: 30px;
-            background-color: var(--primary-text-color);
-            color: white;
-            border: 1px solid white;
-            font-weight: 700;
-            cursor: pointer;
-        }
-        
-        .sec-box{
-            padding-block:50px ;
-        }
-        .sec-box-cont{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            gap: 40px;
-        
-        }
-        .sec-box-heading{
-            padding-right: 80px;
-        }
-        .antr-box{
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .box{
-            width: 250px;
-            margin-block:15px ;
-        }
-        .icon{
-            font-size: 18px;
-            margin-bottom: 12px;
-        
-        }
-        
-        .sec-box-heading h2{
-            margin-bottom: 10px;
-        
-        }
-        
-        .box h4{
-            margin-bottom: 7px;
-        
-        }
-        
-        .first-img{
-            border-radius: 10px;
-            overflow: hidden;
-            object-fit: cover;
-        }
-        .mmm{
-            margin-left: 8px;
-        }
-        
-        .box{ 
-        cursor: pointer;
-        
-        }
-        
-        
-        .first-img img{
-           transition: 0.5s all;
-           cursor: pointer;
-        }
-        .first-img img:hover{
-            box-shadow: 5px 5px 10px #ddd;
-            transform: translateY(-2px);
-        
-        }
-        </style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-font-family: "Roboto", sans-serif   ;
+    --secondery-font-family:"Poppins", sans-serif; 
+    --card-bg-color: #141414;
+    --primary-bg-color:#00f5d4  ;
+    --accent-color: #495057 ;
+}
+
+body{
+    font-family: var(--primary-font-family);
+    line-height: 1.4rem;
+    color: white;
+    background-color: black;
+}
+p{  color: var(--accent-color);
+    font-family: var(--secondery-font-family);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin-left: auto;
+}
+ul{
+    list-style: none;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.nav-bar{padding-block: 15px;
+    justify-content: space-between;
+    margin-inline: 40px;
+   
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 2px 2xp 5px #ddd;  
+   background-color: #000;
+   z-index: 99;
+}
+.nav-bar{
+   
+}
+.nav-logo{
+    cursor: pointer;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.hero-section{
+    justify-content: space-between;
+    align-items: normal;
+}
+.hero-pic{
+    margin-right: 100px;
+}
+.hero-text{
+    width: 400px;
+}
+.hero-text h5{
+    color: var(--primary-bg-color);
+
+}
+.hero-heading{
+    margin-top: 20px;
+    font-size: 52px;
+    margin-bottom: 20px;
+    line-height: 3.5rem;
+
+}
+
+.btn{cursor: pointer;
+    width: 170px;
+    height: 45px;
+    margin-top: 10px;
+    border: 2px solid var(--primary-bg-color);
+    background: #000;
+    color: white;
+}
+.card-box{
+    margin-top: 30px;
+    gap: 20px;
+}
+.icon{
+    font-size: 42px;
+    margin-bottom: 20px;
+    
+}
+.card{
+width: 300px;
+height: 290px;
+background-color: #141414; 
+padding: 15px 18px;
+border-radius: 7px;
+transition: 0.3s all ease;
+cursor: pointer;
+
+}
+
+.card h2{
+margin-top: 20px;
+}
+.card p{
+    margin-block: 20px;
+}
+.card:hover{
+    box-shadow: 4px 4px 9px #ccc;
+    transform: translateY(-2px);
+}
+.card-section{
+    margin-bottom: 50px;
+}
+
+
+
+.sec-card-sect{
+    background-color: #0a0908;
+    padding-bottom: 50px;
+}
+
+.final{
+    padding-block: 60px;
+}
+.final h2{
+    font-size: 32px;
+}
+.final h5{
+    margin-top: 20px;
+    color: var(--primary-bg-color);
+}
+footer{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.ic{
+    padding-right: 10px;
+}
+    </style>
 </head>
 <body>
-    <nav class="">
-        <div class="nav-links container flex">
-        <div ><img class="logo" width="50px" src="workphoto/child01.jpg" alt=""></div>
-        <div class="nav-links">
+    <nav>
+        <div class="nav-bar flex">
+            <div class="nav-logo"><h2>HRUS</h2> </div> 
+            <div class="nav-links">
             <ul class="flex">
                 <li class="hover-links">Home</li>
-                <li class="hover-links">About</li>
                 <li class="hover-links">Product</li>
-                <li class="hover-links">Blog</li>
+                <li class="hover-links">Apply</li>
+                <li class="hover-links">Money</li>
+                <li class="hover-links">Service</li>
                 <li class="hover-links">Contact</li>
-            </ul>
+                <li class="hover-links"><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul></div>
         </div>
-        <div class="icon">
-            <input class="text" type="text" placeholder="text">
-            <button class="btn">Submit</button>
-        </div></div>
-    </nav>
-    
-    <header class="hero ">
-        <div class="hero-sect container flex">
-        <section class="hero1  ">
-            <h1 class="head-heading">Modern Interior Design Studio</h1>
-            <p class="head-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse perspiciatis tenetur suscipit quo nemo qui, fuga excepturi molestiae quae? Iure!</p>
-           <div class="btn-box"><button class="btn1">Buy Now</button>
-            <button class=" btn2 "> I agree</button></div> 
 
-        </section>
-        <section>
-            <img class="img-logo1" src="workphoto/sofa.png" alt="">
-        </section></div>
-    </header>
+    </nav>
+
 
     <main>
+        <section>
+            <div class="hero-section flex container">
+     <div class="hero-text">
+            <h5>CREATIVE MENS CREATIVE WOMENS.</h5>
+            <h1 class="hero-heading">We are digital agencey.</h1>
+            <button class="btn">MITTING STARTED</button>
         
+        </div>
+<div class="hero-pic">
+    <img width="200px" src="workphoto/dark-male.jpg" alt="">
+</div>
+        
+        </div>
+        </section>
 
-                <section class="cta flex container">
-                    <div class="text-con">
-                        <h2 class="hh2">Crafted with excellent material.</h2>
-                        <p class="pp2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse animi eum corporis tempore voluptas.</p>
-                        <button class=" btn3">I agree</button>
-                    </div>
-                    <div class="chair-box flex">
-                    <div class="chair chair1"><img width="100px" src="workphoto/chair1.png" alt="chair1">   <p class="stuff1">Chair-1</p><p class="money1" >$40-45</p></div>
-                    <div class="chair chair2"><img width="150px" src="workphoto/chair2.png" alt="chair2">   <p class="stuff2">Chair-2</p><p class="money2" >$30-35</p></div>
-                    <div class="chair chair3"> <img width="100px" src="workphoto/chair3.png" alt="chair3">  <p class="stuff3">Chair-3</p><p class="money3" >$20-25</p></div>
+        <section class="card-section">
+
+            <div class="card-box flex container">
+                <div class="card">  
+
+
+                    <i class="icon fa-brands fa-telegram"></i>
+                    <h2>Future Concept.</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At velit omnis ad!.</p>
                 </div>
-                </section>
+                <div class="card">
+                    <i class="icon fa-solid fa-brain"></i>
+                    <h2>The Big Ideas.</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At velit omnis ad!.</p>
+                </div>
+                <div class="card">
+                    
+                    <i class="icon fa-solid fa-virus"></i>
+                    <h2>Creative Antivirus.</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At velit omnis ad!.</p>
+                </div>
+            </div>
+   </section>
 
-            
+   <section class="sec-card-sect">
+<div class="sec-card-cont container">
+    <div class="final">
+<h2>→ Services.</h2>
+<h5 >SOMTHINNG STUFF HERE.</h5></div>
 
-    <section class="sec-box container">
-        <div class="sec-box-cont">
-        <div class="sec-text-box"><div class="sec-box-heading"><h2>Why Choose Us</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est deserunt sit vel perspiciatis, illo unde sapiente id harum aspernatur.</p></div>
-        <div class="antr-box flex">
-            <div class="box box-1"><div class="icon"><i class="fa-solid fa-truck"></i></div><h4>Lorem, ipsum dolor.</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, labore.</p></div>
-            <div class="box box-2"><div class="icon"><i class="fa-solid fa-calendar-days"></i></div><h4>Lorem, ipsum dolor.</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, labore.</p></div>
-            <div class="box box-3"><div class="icon"><i class="fa-solid fa-globe"></i></div><h4>Lorem, ipsum dolor.</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, labore.</p></div>
-            <div class="box box-4"><div class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><h4>Lorem, ipsum dolor.</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, labore.</p></div>
-        </div>
-    
+<div class="card-box flex container">
+    <div class="card">  
+
+
+        <i class="icon fa-solid fa-house"></i>
+                <h2>Future Concept.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At velit omnis ad!.</p>
     </div>
-        <div class="first-img"><img width="480px" height="400px"  src="workphoto/inter-2.jpg" alt=""></div>
+    <div class="card">
+        <i class="icon fa-solid fa-pencil"></i>        <h2>The Big Ideas.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At velit omnis ad!.</p>
     </div>
-    </section>
+    <div class="card">
+        
+        <i class="icon -brands fa-uikit"></i>
+                <h2>Creative Antivirus.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At velit omnis ad!.</p>
+    </div>
+</div>
 
 
 
-    <section class="sec-box container">
-        <div class="sec-box-cont">
-            <div class="first-img"><img width="480px" height="400px"  src="workphoto/inter-1.jpg" alt=""></div>
-        <div class="sec-text-box"><div class="sec-box-heading"><h2>We Help You Modern Interior Design</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est deserunt sit vel perspiciatis, illo unde sapiente id harum aspernatur.</p></div>
-        <div class="antr-box flex">
-            <div class="box box-1"><div class="icon"><i class="fa-solid fa-user"></i></div><h4>Lorem, ipsum dolor.</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, labore.</p></div>
-            <div class="box box-2"><div class="icon"><i class="fa-solid fa-comment"></i></div><h4>Lorem, ipsum dolor.</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, labore.</p></div>
-            <div class="box box-3"><div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h4>Lorem, ipsum dolor.</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, labore.</p></div>
-            <div class="box box-4"><div class="icon"><i class="fa-solid fa-gear"></i></div><h4>Lorem, ipsum dolor.</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, labore.</p></div>
-        </div>
-    
-    </div>
-       
-    </div>
-    </section>
+
+</div>
+
+
+
+   </section>
+
+
+
+
     </main>
     <hr>
+    <br><br>
+ <footer><i class="ic fa-solid fa-copyright"></i>copyrights reserverd by Shahbaj Khan</footer>
 
-    <footer>
-        <div class="chair-box container flex">
-            <div class="  flex"><img width="100px" src="workphoto/chair1.png" alt="chair1"> <div class="mmm">  <p class="stuff1">Chair-1</p><p>Lorem ipsum dolor sit amet, consectetu.</p> </div></div>
-            <div class=" flex"><img width="150px" src="workphoto/chair2.png" alt="chair2"> <div class="mmm"> <p class="stuff2">Chair-2</p><p>Lorem ipsum, dolor sit amet consectetur .</p></div> </div>
-            <div class=" flex"> <img width="100px" src="workphoto/chair3.png" alt="chair3"><div class="mmm">  <p class="stuff3">Chair-3</p><p>Lorem ipsum dolor, sit amet consectetur .</p></div></div>
-        </div>
 
-    </footer>
+
+
+
+
 
 
     <script src="https://kit.fontawesome.com/f3fc2443a5.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
